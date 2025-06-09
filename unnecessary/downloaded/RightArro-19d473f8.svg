@@ -1,0 +1,27 @@
+<svg
+          width="27"
+          height="27"
+          viewBox="0 0 27 27"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="27"
+            width="27"
+            height="27"
+            rx="13.5"
+            transform="rotate(90 27 0)"
+            fill="#1F3AE1"
+          />
+          <path
+            d="M14.4161 19L18.9977 13.5368L14.416 8"
+            stroke="white"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M19 13.5354L8 13.5354"
+            stroke="white"
+            stroke-linecap="round"
+          />
+        </svg>

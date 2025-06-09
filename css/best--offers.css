@@ -1,0 +1,88 @@
+.best--offers {
+  width: 85%;
+  height: 812px;
+  margin: 10px auto;
+  background-color: #ffffff;
+  .best--offers-table {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border: 1px solid lightgray;
+    border-radius: 18px;
+    .best--offers-row {
+      .best--offers-header {
+        width: 100%;
+        height: 60px;
+
+        /* display: flex;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        padding: 0px auto;*/
+        .best--offers-header--text {
+          font-family: var(--font--IRyekan);
+          font-size: 21px;
+          color: #0c0c0c;
+          font-weight: 600;
+          text-align: center;
+        }
+      }
+      .best--offers-card {
+        border-left: 0.7px solid lightgray;
+        border-bottom: 0.7px solid lightgray;
+        .best--offers-card-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .best--offers-card-main-img {
+            width: 150px;
+            height: 150px;
+          }
+          .best--offers-discount {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+            align-items: center;
+            .best--offers-discount-price {
+              display: flex;
+              align-items: center;
+              flex-flow: row-reverse wrap;
+              font-family: var(--font--B-nazanin);
+              font-weight: bold;
+              .toman--svg {
+                width: 16px;
+                height: 16px;
+              }
+            }
+            .best--offers-discount-number {
+              font-family: var(--font--B-nazanin);
+              padding: 0px 3px;
+              background-color: crimson;
+              border-radius: 10px;
+              color: whitesmoke;
+            }
+          }
+          .best--offers-price {
+            font-family: var(--font--B-nazanin);
+            text-align: center;
+            padding: 0px 10px 10px 10px;
+            display: inline-block;
+            width: 100%;
+            text-decoration: line-through;
+            color: grey;
+          }
+        }
+      }
+    }
+  }
+}
+.not-this-end {
+  border-bottom-left-radius: 16px;
+}
+.not-this-1 {
+  border-bottom-right-radius: 16px;
+}

@@ -1,0 +1,113 @@
+.super--market {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  .super--market-center {
+    width: 85%;
+    height: 110px;
+    background-image: url(../images/super--market/background.svg);
+    background-repeat: no-repeat;
+    background-color: rgba(163, 205, 205, 0.438);
+    /* background: linear-gradient(
+      90deg,
+      rgba(240, 240, 241, 1) 0%,
+      rgba(236, 239, 239, 1) 50%,
+      rgba(233, 237, 236, 1) 100%
+    ); */
+    margin: 10px auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    cursor: pointer;
+    .background {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      display: flex;
+    }
+    .super--market-banner {
+      display: flex;
+      flex-grow: 4;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: flex-start;
+      column-gap: 20px;
+      margin-right: 20px;
+      .sm--banner-text {
+        background-color: #029a49;
+        box-sizing: border-box;
+        border-radius: 16px;
+        p {
+          padding: 5px 15px;
+          color: #ffffff;
+          font-family: var(--font--yekan);
+          font-size: 14px;
+          font-weight: 550;
+          word-spacing: 3px;
+          line-height: 20px;
+        }
+      }
+    }
+    .super--market-discounts {
+      flex-grow: 1;
+      display: flex;
+      column-gap: 8px;
+      align-items: center;
+      justify-content: center;
+
+      .sm--discount-img {
+        width: 71px;
+        height: 71px;
+        box-sizing: border-box;
+        padding: 3px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        .discount-number {
+          font-family: var(--font--B-nazanin);
+          padding: 0px 5px;
+          background-color: crimson;
+          border-radius: 10px;
+          box-sizing: border-box;
+          color: whitesmoke;
+          font-weight: 600;
+          position: absolute;
+          height: 20px;
+          margin: 40px 0px 0px 45px;
+        }
+        img {
+          width: 58px;
+          height: 58px;
+          border-radius: 50%;
+        }
+      }
+    }
+    .super--market-botton {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 8px;
+      background-color: #ffffff;
+      padding: 10px 18px;
+      box-sizing: border-box;
+      border-radius: 9999px;
+      margin-left: 30px;
+      .sm--botton-txt {
+        font-family: var(--font--IRyekan);
+        font-size: 12px;
+        line-height: 2.17;
+        font-weight: 600;
+        color: #029a49;
+      }
+      .sm--botton-icon {
+        display: block;
+      }
+    }
+  }
+}
+/* background svg can't be applied/why? */
