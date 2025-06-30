@@ -159,6 +159,11 @@ header {
     padding-top: 4px;
   }
 }
+.header--nav-link:hover {
+  border-bottom: 2px solid crimson;
+  border-radius: 1px;
+  color: deeppink;
+}
 /* end header--center */
 .header--bottom {
   width: 100%;
@@ -188,11 +193,7 @@ header {
           align-items: center;
           justify-content: center;
           transition: 150ms;
-          &:hover {
-            border-bottom: 2px solid crimson;
-            border-radius: 1px;
-            color: deeppink;
-          }
+
           img {
             display: blocks;
           }
@@ -252,6 +253,7 @@ header {
     cursor: pointer;
   }
 }
+
 /* end header--bottom */
 
 /* end header */

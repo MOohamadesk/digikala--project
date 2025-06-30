@@ -3,18 +3,18 @@
   height: 100%;
   .cards--two-center {
     background-color: #ffffff;
-    width: 83%;
+    width: 80%;
     height: 270px;
     margin: 10px auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    column-gap: 10px;
+    column-gap: 8px;
     cursor: pointer;
     .cards--two-image {
       img {
-        width: 656px;
+        width: 640px;
         height: 260px;
         border-radius: 16px;
       }

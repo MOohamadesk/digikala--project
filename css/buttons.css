@@ -1,0 +1,51 @@
+.support-btn {
+  width: 46px;
+  height: 46px;
+  position: fixed;
+  border-radius: 50%;
+  right: 60px;
+  bottom: 30px;
+  box-sizing: border-box;
+  background: #ef4056;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+  a {
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+}
+.supermarket--btn {
+  width: 270px;
+  height: 50px;
+  background-color: #029a49;
+  padding: 5px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 500;
+}
+.supermarket--btn-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.supermarket--btn-text {
+  font-family: var(--font--IRyekan);
+  font-size: 15px;
+  line-height: 50px;
+  color: #fff;
+}
+.supermarket--btn-line {
+  display: block;
+  width: 1px;
+  height: 24px;
+  background: #fff;
+  margin: 0px 8px;
+}

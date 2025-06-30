@@ -1,0 +1,473 @@
+footer {
+  .footer--phone-digi {
+    width: 100%;
+    height: 70px;
+    .footer--phone-digi-top {
+      height: 40px;
+      width: 98%;
+      margin: 0px 20px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+      .footer--phone-digi-top-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          height: 30px;
+          width: 195px;
+        }
+      }
+      .footer--phone-digi-top-btn {
+        width: 140px;
+        height: 40px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        a {
+          text-decoration: none;
+          align-items: center;
+          color: #a1a3a8;
+          padding: 8px 16px;
+          font-family: var(--font--IRyekan);
+          font-size: 12px;
+          font-weight: 650;
+        }
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    .footer--phone-digi-bottom {
+      height: 27px;
+      margin-top: 4px;
+      display: flex;
+      align-items: center;
+      p {
+        font-family: var(--font--IRyekan);
+        color: #3f4064;
+        font-size: 12px;
+      }
+      span {
+        display: block;
+        width: 1px;
+        height: 27px;
+        background-color: #a1a3a8;
+        margin: 0px 20px;
+      }
+    }
+  }
+  .footer--digi-optional {
+    display: block;
+    width: 96%;
+    height: 110px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .footer--digi-optional-item {
+      width: 150px;
+      height: 110px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 5px;
+      }
+      p {
+        font-family: var(--font--IRyekan);
+        color: #3f4064;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+  /* .footer--digi-description {
+    width: 98%;
+    height: 270px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    footer--digi-description-column {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0px 10px;
+      .footer--digi-description-column-header {
+        width: 100%;
+        h2 {
+          font-family: var(--font--IRyekan);
+          color: #3f4064;
+          font-size: 14px;
+          margin-bottom: 10px;
+          font-weight: 600;
+          line-height: 33px;
+        }
+      }
+      .footer--digi-description-column-links {
+        width: 100%;
+        height: 100%;
+
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          ul li {
+            margin-bottom: 5px;
+            a {
+              text-decoration: none;
+              color: #3f4064;
+              font-family: var(--font--IRyekan);
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 25px;
+            }
+          }
+        }
+      }
+    }
+  } */
+}
+/* #endregion footer--digi-phone*/
+footer
+  .footer--digi-description
+  .footer--digi-description-column
+  .footer--digi-description-column-links {
+  width: 100%;
+  height: 100%;
+}
+footer .footer--digi-description .footer--digi-description-column {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px 10px;
+}
+footer .footer--digi-description {
+  width: 98%;
+  height: 290px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer
+  .footer--digi-description
+  .footer--digi-description-column
+  .footer--digi-description-column-links
+  ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+footer
+  .footer--digi-description
+  .footer--digi-description-column
+  .footer--digi-description-column-links
+  ul
+  li {
+  width: 100%;
+  margin-bottom: 5px;
+}
+footer
+  .footer--digi-description
+  .footer--digi-description-column
+  .footer--digi-description-column-links
+  ul
+  li
+  a {
+  text-decoration: none;
+  color: #81858b;
+  font-family: var(--font--IRyekan);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.footer--digi-description-column-header {
+  width: 100%;
+}
+.footer--digi-description-column-header h2 {
+  font-family: var(--font--IRyekan);
+  color: #3f4064;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 550;
+  line-height: 33px;
+}
+.footer--digi-description-column-last {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footer--digi-description-column-last-header,
+.footer--digi-description-column-last-text p {
+  font-family: var(--font--IRyekan);
+  color: #3f4064;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 33px;
+}
+.footer--digi-description-column-last-icons {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 33px;
+}
+.social--media-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+.footer--digi-description-column-last-form {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+input[type="email"] {
+  width: 100%;
+  height: 45px;
+  border-radius: 8px;
+  background-color: #d7bfbf;
+  border: 1px solid #f0f0f14b;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  font-family: var(--font--IRyekan);
+  font-size: 14px;
+  color: #3f4064;
+  outline: none;
+}
+input[type="email"]::placeholder {
+  font-family: var(--font--yekan);
+  color: gray;
+}
+.email--form {
+  width: 270px;
+}
+.footer--digi-description-column-last-bottom-btn {
+  width: 60px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-family: var(--font--IRyekan);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 10px 16px;
+  background-color: #c6aeb1;
+  color: gray;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+.footer--digi-description-column-last-bottom-btn span {
+  font-family: var(--font--IRyekan);
+  font-size: 14px;
+  color: gray;
+  line-height: 40px;
+  margin-top: 5px;
+}
+.footer--digi-app {
+  width: 98%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #3c4b6d;
+  border-radius: 16px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer--digi-app-right {
+  width: 930px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 20px;
+}
+.footer--digi-app-right .footer--digi-app-right-logo img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+.footer--digi-app-right-text h2 {
+  font-family: var(--font--IRyekan);
+  font-size: 21px;
+  color: #ffffff;
+  margin-right: 10px;
+  line-height: 80px;
+  letter-spacing: 1px;
+}
+.footer--digi-app-left {
+  width: 550px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 15px;
+}
+.footer--digi-app-left-item {
+  width: 146px;
+  height: 45px;
+  border-radius: 6px;
+}
+.digi--more-digi-app {
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.digi--more-digi-app img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+.digi--honors-all {
+  width: 98%;
+  height: 240px;
+  margin: 50px auto;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.digi--honors-text {
+  width: 68%;
+  height: 160px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  span {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font--IRyekan);
+    font-size: 12px;
+    font-weight: 450;
+    color: #81858b;
+    line-height: 26px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+    h3 {
+      font-family: var(--font--IRyekan);
+      font-size: 21px;
+      line-height: 44px;
+      font-weight: 600;
+      color: #62666d;
+    }
+  }
+}
+.footer--show-more {
+  text-decoration: none;
+  color: #19bfd3;
+  font-family: var(--font--IRyekan);
+  font-size: 12px;
+  font-weight: 450;
+  line-height: 30px;
+  margin-top: 10px;
+  display: block;
+}
+.digi--honors-images {
+  width: 30%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 20px;
+  img {
+    width: 75px;
+    height: 80px;
+    outline: 0.8px solid #e0e0e2;
+    outline-offset: 5px;
+  }
+}
+.footer--digi-honors-copyright {
+  font-size: 11px;
+  color: #81858b;
+  font-family: var(--font--IRyekan);
+  text-align: center;
+}
+.digi--logos-line-first {
+  width: 98%;
+  height: 85px;
+  margin: 5px auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 0px;
+  z-index: 100;
+}
+.digi--logos-line-second {
+  width: 98%;
+  height: 85px;
+  margin: 5px auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 0px;
+  z-index: 100;
+}
+.digi--logo {
+  width: 190px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    object-fit: cover;
+    height: 20px;
+  }
+}
