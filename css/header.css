@@ -159,11 +159,7 @@ header {
     padding-top: 4px;
   }
 }
-.header--nav-link:hover {
-  border-bottom: 2px solid crimson;
-  border-radius: 1px;
-  color: deeppink;
-}
+
 /* end header--center */
 .header--bottom {
   width: 100%;
@@ -173,6 +169,7 @@ header {
 
   .header--nav {
     width: 75%;
+    background: #ffffff;
     .nav--ulist {
       width: 1000px;
       height: 100%;
@@ -192,14 +189,18 @@ header {
           display: flex;
           align-items: center;
           justify-content: center;
-          transition: 150ms;
+          transition: 100ms;
 
           img {
-            display: blocks;
+            display: block;
           }
         }
       }
     }
+  }
+  .header--nav-link:hover {
+    border-bottom: 2px solid crimson;
+    border-radius: 1px;
   }
 
   .category {

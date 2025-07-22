@@ -1,0 +1,125 @@
+@font-face {
+  font-family: IRANYekan;
+  src: url("../fonts/IRAN-yekan/IRANYekan.ttf") format("ttf");
+  src: url("../fonts/IRAN-yekan/IRANYekan.woff2") format("woff2");
+  src: url("../fonts/IRAN-yekan/IRANYekan.woff") format("woff");
+}
+:root {
+  --font--IRyekan: IRANYekan;
+}
+.login--card {
+  width: 400px;
+  height: 455px;
+  background-color: #ffffff;
+  border: 0.5px solid lightgray;
+  border-radius: 12px;
+  margin: 140px auto;
+}
+
+.login--header-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto 30px auto;
+  position: relative;
+}
+.login--back-icon {
+  position: absolute;
+  top: calc(50% - 24px / 2);
+  right: 35px;
+  cursor: pointer;
+}
+.login--title {
+  width: 90%;
+  height: 40px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row nowrap;
+  column-gap: 20px;
+  p {
+    font-size: 19px;
+    font-family: var(--font--IRyekan);
+    font-weight: 550;
+    line-height: 40px;
+    margin: 0px;
+    color: #0c0c0c;
+  }
+  .login--title-line {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: #0d0c22;
+    position: relative;
+    top: 5px;
+  }
+}
+.login--detail-text {
+  width: 90%;
+  margin: 0px auto;
+  font-size: 12px;
+  font-family: var(--font--IRyekan);
+  color: #3f4064;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.login--input {
+  margin: 0px auto;
+  input[type="text"] {
+    direction: ltr;
+    width: 90%;
+    height: 40px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #dcdcdc;
+    position: relative;
+    right: calc(50% - 90% / 2);
+    padding: 20px 10px;
+    font-size: 24px;
+  }
+}
+.login--button {
+  width: 90%;
+  height: 40px;
+  margin: 20px auto;
+  padding: 8px 0px;
+  background-color: #ef4056;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #d93a6a;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font--IRyekan);
+    font-weight: bold;
+
+    font-size: 14px;
+    line-height: 40px;
+  }
+}
+.login--terms {
+  width: 90%;
+  margin: 0px auto;
+  font-size: 12px;
+  font-family: var(--font--IRyekan);
+  color: #3f4064;
+  line-height: 1.5;
+  text-align: center;
+  a {
+    color: #008eb2;
+    text-decoration: none;
+    font-weight: 350;
+    &:hover {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }
+}
