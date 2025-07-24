@@ -1,0 +1,115 @@
+.best--sales {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  .best--sales-center {
+    background-color: #ffffff;
+    width: 85%;
+    height: 100%;
+    margin: 10px auto;
+    border: 1px solid lightgray;
+    border-radius: 18px;
+    .best--sales-header {
+      width: 100%;
+      height: 45px;
+      display: flex;
+      margin-top: 10px;
+      align-items: center;
+      justify-content: center;
+      .best--sales-header-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+          font-family: var(--font--IRyekan);
+          font-size: 21px;
+          color: #0c0c0c;
+          font-weight: 600;
+          text-align: center;
+        }
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .best--sales-header-more {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: -500px;
+        a {
+          text-align: end;
+          font-family: var(--font--IRyekan);
+          font-size: 14px;
+          font-weight: 600;
+          color: #19bfd3;
+          text-decoration: none;
+        }
+      }
+    }
+    .swiper {
+      width: 100%;
+      height: 310px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .best--sales-column {
+        display: flex;
+
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        row-gap: 8px;
+        .best--sales-rows {
+          width: 318px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          column-gap: 10px;
+          padding-top: 20px;
+          .best--sales-rows-img {
+            width: 86px;
+            img {
+              width: 100%;
+              height: 86px;
+            }
+          }
+          .best--sales-rows-digit {
+            margin-right: 10px;
+            span {
+              font-family: var(--font--yekan);
+              font-size: 26px;
+              line-height: 22px;
+              color: #19bfd3;
+              font-weight: 900;
+              text-align: center;
+            }
+          }
+          .best--sales-rows-text {
+            p {
+              font-family: var(--font--IRyekan);
+              font-size: 12px;
+              color: rgb(61, 64, 100);
+              text-align: center;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              line-clamp: 2;
+              -webkit-box-orient: vertical;
+              box-orient: vertical;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+}

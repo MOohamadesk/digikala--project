@@ -41,6 +41,7 @@
   .swiper-slide-cs-column-bottom {
     width: 100px;
     height: 140px;
+    background-color: #fffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,6 +54,7 @@
       font-family: var(--font--IRyekan);
       line-height: 2.17;
       font-weight: 500;
+      color: #0c0c0c;
       font-size: 12px;
     }
   }

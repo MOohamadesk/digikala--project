@@ -1,0 +1,266 @@
+.digi--needs {
+  width: 85%;
+  margin: 0 auto 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid lightgray;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+.digi--needs-header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f0f0f1;
+  padding: 5px 24px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.digi--needs-header .digi--needs-header-side h3 {
+  color: #0c0c0c;
+  font-size: 16px;
+  font-family: var(--font--IRyekan);
+  line-height: 20px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.digi--needs-header-side {
+  width: 200px;
+  height: 30px;
+}
+.digi--needs-header-right {
+  background: #fff;
+  position: relative;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.digi--needs-header-right::after {
+  content: "";
+  width: 60px;
+  height: 2.6px;
+  background: rgba(26, 112, 26, 0.714);
+  position: absolute;
+  bottom: -4px;
+}
+.digi--needs-header-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.digi--needs-header-side a {
+  color: #19bfd3;
+  font-size: 12px;
+  font-family: var(--font--IRyekan);
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.digi--needs-header-side a:hover {
+  color: #0c0c0c;
+}
+
+.digi--needs-swiper {
+  width: 100%;
+  height: 300px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digi--needs-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.digi--needs-swiper .swiper-slide {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  height: auto;
+}
+
+.digi--needs-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 5px;
+  height: 300px;
+  width: 185px;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+.digi--needs-card:hover {
+  box-shadow: 0 4px 16px rgba(25, 191, 211, 0.12);
+}
+
+.digi--needs-card-image {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digi--needs-card-image img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f7f7f7;
+}
+
+.digi--needs-card-image span {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digi--needs-card-image span img {
+  width: 18px;
+  height: 18px;
+}
+
+.digi--needs-card-text {
+  margin-bottom: 6px;
+  text-align: center;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digi--needs-card-text span {
+  color: #23254e;
+  font-family: var(--font--IRyekan);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.digi--needs-card .price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #23254e;
+  font-size: 16px;
+  font-family: var(--font--B-nazanin);
+  font-weight: 700;
+  background: #fff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  line-height: 24px;
+}
+
+.digi--needs-card .price img {
+  width: 18px;
+  height: 18px;
+  margin-left: 4px;
+  object-fit: contain;
+}
+
+/* Swiper navigation buttons for digi--needs */
+.digi--needs .swiper-button-next,
+.digi--needs .swiper-button-prev {
+  color: #19bfd3;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(25, 191, 211, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.digi--needs .swiper-button-next:hover,
+.digi--needs .swiper-button-prev:hover {
+  background: #e0f7fa;
+}
+
+.digi--needs .swiper-button-next:after,
+.digi--needs .swiper-button-prev:after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .digi--needs {
+    width: 98%;
+  }
+  .digi--needs-card {
+    width: 150px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 900px) {
+  .digi--needs-swiper {
+    height: 320px;
+  }
+  .digi--needs-card {
+    width: 120px;
+    height: 260px;
+    padding: 10px 4px 8px 4px;
+  }
+  .digi--needs-card-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .digi--needs-header {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 8px;
+    gap: 8px;
+  }
+  .digi--needs-swiper {
+    height: 220px;
+  }
+  .digi--needs-card {
+    width: 90px;
+    height: 160px;
+    padding: 6px 2px 6px 2px;
+  }
+  .digi--needs-card-image {
+    width: 48px;
+    height: 48px;
+  }
+  .digi--needs-card-text span {
+    font-size: 10px;
+  }
+  .digi--needs-card .price {
+    font-size: 12px;
+    padding: 2px 6px;
+  }
+}
