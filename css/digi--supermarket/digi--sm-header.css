@@ -242,7 +242,7 @@ input[type="search"]::placeholder {
         height: 20px;
       }
     }
-    .header--sm-city-loc-text {
+    /* .header--sm-city-loc-text {
       span {
         font-family: var(--font--IRyekan);
         font-size: 12px;
@@ -250,10 +250,9 @@ input[type="search"]::placeholder {
         color: #3f4064;
         font-weight: 550;
       }
-    }
+    } */
   }
 }
 .header--sm-city-box {
   cursor: pointer;
 }
-

@@ -153,7 +153,13 @@
                   <img src="./images/header/city--loc.svg" alt="" />
                 </div>
                 <div class="header--city-loc-text">
-                  <span class="city--choose-text">شهر خود را انتخاب کنید</span>
+                  <div class="cities-container">
+                    <h2>انتخاب شهر خود</h2>
+                    <div class="city-list" id="cityList"></div>
+                    <button class="choose-btn" id="chooseBtn" disabled>
+                      ثبت موقعیت
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -3048,6 +3054,7 @@
 
     <!--#endregion wrapper-->
     <script src="./src/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/choose--city.js"></script>
     <!-- initilize swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {

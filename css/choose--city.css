@@ -1,0 +1,69 @@
+ .city--sm-choose-text {
+                  background: #fff;
+                  color: #333;
+                  border: 1px solid #eee;
+                  border-radius: 8px;
+                  padding: 8px 16px;
+                  cursor: pointer;
+                  font-size: 1rem;
+                  transition: box-shadow 0.2s;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+                }
+                .city--sm-choose-text:hover {
+                  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+                  border-color: #ccc;
+                }
+
+                .city-select-modal {
+                  position: fixed;
+                  top: 0; right: 0; left: 0; bottom: 0;
+                  background: rgba(0,0,0,0.3);
+                  z-index: 9999;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+                .city-select-modal.hidden {
+                  display: none;
+                }
+                .city-select-content {
+                  background: #fff;
+                  border-radius: 12px;
+                  padding: 24px 32px;
+                  min-width: 280px;
+                  max-width: 90vw;
+                  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+                  text-align: center;
+                }
+                .city-select-close {
+                  position: absolute;
+                  top: 12px;
+                  left: 12px;
+                  background: none;
+                  border: none;
+                  font-size: 2rem;
+                  color: #888;
+                  cursor: pointer;
+                }
+                .city-select-list {
+                  list-style: none;
+                  padding: 0;
+                  margin: 24px 0 0 0;
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 8px;
+                }
+                .city-btn {
+                  background: #f5f5f5;
+                  border: 1px solid #eee;
+                  border-radius: 6px;
+                  padding: 8px 0;
+                  width: 100%;
+                  cursor: pointer;
+                  font-size: 1rem;
+                  transition: background 0.2s, border-color 0.2s;
+                }
+                .city-btn:hover {
+                  background: #e0e0e0;
+                  border-color: #bbb;
+                }

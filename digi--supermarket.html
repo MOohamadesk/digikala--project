@@ -50,7 +50,7 @@
 
           <div class="header--sm-top-buttons">
             <div class="header--sm-top-register">
-              <a class="header--sm-top-register-link" href="#">
+              <a class="header--sm-top-register-link" href="./login.html">
                 <img
                   class="header--sm-top-register-svg"
                   src="./images/header/register-icon.svg"
@@ -102,10 +102,40 @@
               <div class="header--sm-city-loc-icon">
                 <img src="./images/digi--supermarket/city--loc.svg" alt="" />
               </div>
+              <!-- 
+              
+              
+              this choose city is not working in output and all small buttons are shown in the header
+               ask coppppp
+
+
+
+               here i left
+              
+              
+              
+              
+              -->
               <div class="header--sm-city-loc-text">
-                <span class="city--sm-choose-text">
-                  لطفا شهر خود را انتخاب کنید
-                </span>
+                <button id="openCityBox" class="city--sm-choose-text">انتخاب شهر</button>
+                <div id="cityBox" class="city-select-modal hidden"></div>
+                  <div class="city-select-content" style="position:relative;"></div>
+                    <button id="closeCityBox" class="city-select-close" aria-label="بستن">&times;</button>
+                    <h3>شهر خود را انتخاب کنید</h3>
+                    <ul class="city-select-list">
+                      <li><button class="city-btn" data-city="تهران">تهران</button></li>
+                      <li><button class="city-btn" data-city="مشهد">مشهد</button></li>
+                      <li><button class="city-btn" data-city="اصفهان">اصفهان</button></li>
+                      <li><button class="city-btn" data-city="شیراز">شیراز</button></li>
+                      <li><button class="city-btn" data-city="کرج">کرج</button></li>
+                      <li><button class="city-btn" data-city="تبریز">تبریز</button></li>
+                      <li><button class="city-btn" data-city="اهواز">اهواز</button></li>
+                      <li><button class="city-btn" data-city="قم">قم</button></li>
+                      <li><button class="city-btn" data-city="رشت">رشت</button></li>
+                      <li><button class="city-btn" data-city="کرمان">کرمان</button></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -3142,15 +3172,15 @@
       </div>
       <!-- #endregion digi--needs -->
 
-      <!-- #region last--hours-sm -->
-      <div class="best--sales-sm">
-        <div class="best--sales-center-sm">
-          <div class="best--sales-header-sm">
+      <!-- #region last--hours -->
+      <div class="best--sales">
+        <div class="best--sales-center">
+          <div class="best--sales-header">
             <div class="best--sales-header-title">
               <img src="./images/best--sales/header--icon.svg" alt="" />
               <h2>داغ ترین چند ساعت گذشته</h2>
             </div>
-            <div class="best--sales-header-more-sm">
+            <div class="best--sales-header-more">
               <a href="#">مشاهده همه</a>
             </div>
           </div>
@@ -3485,7 +3515,1123 @@
         </div>
       </div>
 
-      <!-- #endregion last--hours-sm -->
+      <!-- #endregion last--hours -->
+
+      <!-- #region digi--needs -->
+      <div class="digi--needs">
+        <div class="digi--needs-header">
+          <div class="digi--needs-header-right digi--needs-header-side">
+            <h3>انواع کالاهای اساسی</h3>
+          </div>
+          <div class="digi--needs-header-left digi--needs-header-side">
+            <a href="#">مشاهده همه > </a>
+          </div>
+        </div>
+        <div class="swiper myNeeds digi--needs-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-1.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-1.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-2.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-3.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-4.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-5.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-6.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-1.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-2.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-3.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <!-- #endregion digi--needs -->
+
+      <!-- #region digi--needs -->
+      <div class="digi--needs">
+        <div class="digi--needs-header">
+          <div class="digi--needs-header-right digi--needs-header-side">
+            <h3>انواع کالاهای اساسی</h3>
+          </div>
+          <div class="digi--needs-header-left digi--needs-header-side">
+            <a href="#">مشاهده همه > </a>
+          </div>
+        </div>
+        <div class="swiper myNeeds digi--needs-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-1.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-1.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-2.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-3.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-4.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-5.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-6.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-1.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-2.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-3.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <!-- #endregion digi--needs -->
+
+      <!-- #region digi--needs -->
+      <div class="digi--needs">
+        <div class="digi--needs-header">
+          <div class="digi--needs-header-right digi--needs-header-side">
+            <h3>انواع کالاهای اساسی</h3>
+          </div>
+          <div class="digi--needs-header-left digi--needs-header-side">
+            <a href="#">مشاهده همه > </a>
+          </div>
+        </div>
+        <div class="swiper myNeeds digi--needs-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-1.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-1.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-2.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-3.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-4.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-5.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-6.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-1.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-2.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-3.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <!-- #endregion digi--needs -->
+
+      <!-- #region digi--needs -->
+      <div class="digi--needs">
+        <div class="digi--needs-header">
+          <div class="digi--needs-header-right digi--needs-header-side">
+            <h3>انواع کالاهای اساسی</h3>
+          </div>
+          <div class="digi--needs-header-left digi--needs-header-side">
+            <a href="#">مشاهده همه > </a>
+          </div>
+        </div>
+        <div class="swiper myNeeds digi--needs-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-1.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-1.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-2.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-3.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-4.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-5.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-6.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-1.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-2.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="digi--needs-card">
+                <div class="digi--needs-card-image">
+                  <img
+                    src="./images/digi--supermarket/digi--needs/digi--needs-img-3.jpg"
+                    alt=""
+                  />
+                  <span>
+                    <img
+                      src="./images/digi--supermarket/super--off/plus--add-icon.svg"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="digi--needs-card-text">
+                  <span> زعفران سرگل سحرخیز مقدار 1 گرم </span>
+                </div>
+                <div class="price">
+                  <img
+                    src="./images/digi--supermarket/super--off/toman--sm.svg"
+                    alt=""
+                  />
+                  294,500
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <!-- #endregion digi--needs -->
 
       <!-- #region footer -->
       <footer>
@@ -3997,7 +5143,7 @@
       </footer>
       <!-- #endregion footer -->
     </div>
-
+    <script src="./js/choose--city.js" ></script>
     <script src="./src/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySlider", {
@@ -4154,6 +5300,7 @@
           prevEl: ".swiper-button-prev",
         },
       });
+     
     </script>
   </body>
 </html>
