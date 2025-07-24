@@ -1,69 +1,272 @@
- .city--sm-choose-text {
-                  background: #fff;
-                  color: #333;
-                  border: 1px solid #eee;
-                  border-radius: 8px;
-                  padding: 8px 16px;
-                  cursor: pointer;
-                  font-size: 1rem;
-                  transition: box-shadow 0.2s;
-                  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-                }
-                .city--sm-choose-text:hover {
-                  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-                  border-color: #ccc;
-                }
+label[for="modal"] {
+  display: inline-block;
+  width: fit-content;
+  padding: 6px 10px;
+  background-color: #fef6ef;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  font-family: var(--font-family);
+  font-size: 12px;
+  color: #f57f17;
+  cursor: pointer;
+  margin-bottom: 2px;
+}
+#modal,
+#close {
+  display: none;
+}
+.digi-header-top-left-select-city-bgc {
+  inset: 0 0 0 0;
+  position: fixed;
+  background-color: #b2b2b251;
+  display: none;
+  z-index: 999999999999;
+  .digi-header-top-left-select-city {
+    width: 27%;
+    height: 80%;
+    padding-top: 50px;
+    border-radius: var(--border-radius);
+    background-color: #ffffff;
+    position: absolute;
+    left: calc(50% - 27% / 2);
+    top: calc(50% - 80% / 2);
+    display: flex;
+    flex-flow: column wrap;
+    .digi-header-top-left-select-city-top {
+      width: 410px;
+      height: 58px;
+      padding: 0 20px;
+      display: flex;
+      position: absolute;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
+      top: 0;
+      right: 0;
+      border-bottom: 1px solid #f0f0f1;
+      .digi-header-top-left-select-city-top-right {
+        width: 238px;
+        height: 57px;
+        padding: 12px 0;
+        .digi-header-top-left-select-city-top-right-p {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          p {
+            color: #3f4064;
+            font-family: var(--font-family);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.3px;
+          }
+        }
+      }
+      .digi-header-top-left-select-city-top-left {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        flex-flow: row wrap;
+        label[for="close"] {
+          width: 100%;
+          height: 100%;
+          font-size: 24px;
+          color: #141414;
+          font-weight: bolder;
+          cursor: pointer;
+        }
+      }
+    }
+    .digi-header-top-left-select-city-bottom {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: start;
+      justify-content: flex-start;
+      margin-top: 9px;
+      background-color: #ffffff;
+      z-index: 9999;
+      .digi-header-top-left-select-city-bottom-center {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0 16px 16px 16px;
+        overflow-y: auto;
+        .digi-header-top-left-select-city-bottom-center-top {
+          width: 100%;
+          height: 60px;
+          padding-bottom: 12px;
+          input[type="search"] {
+            width: 100%;
+            height: 44px;
+            margin-top: 10px;
+            background-color: #f0f0f1;
+            border: none;
+            border-radius: 30px;
+            padding: 0 20px;
+            font-family: var(--font-family);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.3px;
+            color: #141414;
+            outline: none;
+            &::placeholder {
+              font-family: var(--font-family);
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 24px;
+              letter-spacing: 0.3px;
+              color: #a1a6aa;
+            }
+          }
+        }
+        .digi-header-top-left-select-city-bottom-center-bottom {
+          width: 100%;
+          height: 80%;
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+          .digi-header-top-left-select-city-bottom-center-bottom-p {
+            width: 100%;
+            height: 50px;
+            font-family: var(--font-family);
+            font-size: 12px;
+            color: #595959;
+            text-align: justify;
+          }
+          .digi-header-top-left-select-city-bottom-center-bottom-center {
+            width: 100%;
+            height: 75px;
+            padding-bottom: 10px;
+            .digi-header-top-left-select-city-bottom-center-bottom-center-p {
+              width: 100%;
+              height: 29px;
+              font-family: var(--font-family);
+              font-size: 14px;
+              text-align: right;
+              color: #3f4064;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 24px;
+              letter-spacing: 0.3px;
+              margin: 0 6px;
+            }
+            .digi-header-top-left-select-city-bottom-center-bottom-center-items {
+              width: 100%;
+              height: 43px;
+              .swiper {
+                width: 100%;
+                height: 100%;
+              }
 
-                .city-select-modal {
-                  position: fixed;
-                  top: 0; right: 0; left: 0; bottom: 0;
-                  background: rgba(0,0,0,0.3);
-                  z-index: 9999;
+              .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .swiper-slide-city {
+                  width: 80px;
+                  height: 40px;
                   display: flex;
+                  flex-flow: row wrap;
                   align-items: center;
                   justify-content: center;
-                }
-                .city-select-modal.hidden {
-                  display: none;
-                }
-                .city-select-content {
-                  background: #fff;
-                  border-radius: 12px;
-                  padding: 24px 32px;
-                  min-width: 280px;
-                  max-width: 90vw;
-                  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-                  text-align: center;
-                }
-                .city-select-close {
-                  position: absolute;
-                  top: 12px;
-                  left: 12px;
-                  background: none;
-                  border: none;
-                  font-size: 2rem;
-                  color: #888;
                   cursor: pointer;
+                  border: 1px solid #f0f0f1;
+                  padding: 5px;
+                  border-radius: 30px;
+                  p {
+                    font-family: var(--font-family);
+                    font-size: 10px;
+                    color: #3f4064;
+                    text-align: center;
+                    font-weight: 700;
+                  }
+                  img {
+                    width: 19px;
+                    height: 19px;
+                    object-fit: cover;
+                    margin-right: 6px;
+                    margin-bottom: 2px;
+                  }
                 }
-                .city-select-list {
-                  list-style: none;
-                  padding: 0;
-                  margin: 24px 0 0 0;
-                  display: grid;
-                  grid-template-columns: repeat(2, 1fr);
-                  gap: 8px;
+              }
+
+              .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+          .digi-header-top-left-select-city-bottom-center-bottom-bottom {
+            width: 100%;
+            position: relative;
+            top: 0;
+            cursor: pointer;
+            .digi-header-top-left-select-city-bottom-center-bottom-bottom-items {
+              width: 100%;
+              height: 47px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              .digi-header-top-left-select-city-bottom-center-bottom-bottom-item {
+                width: 100%;
+                height: 100%;
+                padding: 8px 0;
+                border-bottom: 1px solid #f0f0f1;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+                .digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right {
+                  width: 90%;
+                  height: 30px;
+                  .digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p {
+                    font-family: var(--font-family);
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #0c0c0c;
+                    text-align: right;
+                  }
+                  .digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2 {
+                    font-family: var(--font-family);
+                    color: #a4a7ab;
+                    font-size: 12px;
+                  }
                 }
-                .city-btn {
-                  background: #f5f5f5;
-                  border: 1px solid #eee;
-                  border-radius: 6px;
-                  padding: 8px 0;
-                  width: 100%;
-                  cursor: pointer;
-                  font-size: 1rem;
-                  transition: background 0.2s, border-color 0.2s;
+                .digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left {
+                  width: 24px;
+                  height: 24px;
+                  display: flex;
+                  img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
                 }
-                .city-btn:hover {
-                  background: #e0e0e0;
-                  border-color: #bbb;
-                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#modal:checked ~ .digi-header-top-left-select-city-bgc {
+  display: flex;
+}
+#close:checked ~ .digi-header-top-left-select-city-bgc {
+  display: none;
+}

@@ -102,38 +102,913 @@
               <div class="header--sm-city-loc-icon">
                 <img src="./images/digi--supermarket/city--loc.svg" alt="" />
               </div>
-              <!-- 
-              
-              
-              this choose city is not working in output and all small buttons are shown in the header
-               ask coppppp
-
-
-
-               here i left
-              
-              
-              
-              
-              -->
-              <div class="header--sm-city-loc-text">
-                <button id="openCityBox" class="city--sm-choose-text">انتخاب شهر</button>
-                <div id="cityBox" class="city-select-modal hidden"></div>
-                  <div class="city-select-content" style="position:relative;"></div>
-                    <button id="closeCityBox" class="city-select-close" aria-label="بستن">&times;</button>
-                    <h3>شهر خود را انتخاب کنید</h3>
-                    <ul class="city-select-list">
-                      <li><button class="city-btn" data-city="تهران">تهران</button></li>
-                      <li><button class="city-btn" data-city="مشهد">مشهد</button></li>
-                      <li><button class="city-btn" data-city="اصفهان">اصفهان</button></li>
-                      <li><button class="city-btn" data-city="شیراز">شیراز</button></li>
-                      <li><button class="city-btn" data-city="کرج">کرج</button></li>
-                      <li><button class="city-btn" data-city="تبریز">تبریز</button></li>
-                      <li><button class="city-btn" data-city="اهواز">اهواز</button></li>
-                      <li><button class="city-btn" data-city="قم">قم</button></li>
-                      <li><button class="city-btn" data-city="رشت">رشت</button></li>
-                      <li><button class="city-btn" data-city="کرمان">کرمان</button></li>
-                    </ul>
+              <label for="modal">
+                <img src="images/header-img/location.svg" alt="" /> لطفا شهر خود
+                را انتخاب کنید</label
+              >
+              <input type="radio" name="modal" id="modal" />
+              <input type="radio" name="modal" id="close" />
+              <div class="digi-header-top-left-select-city-bgc">
+                <div class="digi-header-top-left-select-city">
+                  <div class="digi-header-top-left-select-city-top">
+                    <div class="digi-header-top-left-select-city-top-right">
+                      <div class="digi-header-top-left-select-city-top-right-p">
+                        <p>انتخاب شهر</p>
+                      </div>
+                    </div>
+                    <div class="digi-header-top-left-select-city-top-left">
+                      <label for="close">&times;</label>
+                    </div>
+                  </div>
+                  <div class="digi-header-top-left-select-city-bottom">
+                    <div class="digi-header-top-left-select-city-bottom-center">
+                      <div
+                        class="digi-header-top-left-select-city-bottom-center-top"
+                      >
+                        <label for="search"></label>
+                        <input
+                          type="search"
+                          placeholder="جستجو در استان‌ها و شهرهای ایران"
+                        />
+                      </div>
+                      <div
+                        class="digi-header-top-left-select-city-bottom-center-bottom"
+                      >
+                        <p
+                          class="digi-header-top-left-select-city-bottom-center-bottom-p"
+                        >
+                          برای مشاهده تخفیف‌ها و کالا‌های قابل ارسال به شهرتان،
+                          آن را انتخاب کنید.
+                        </p>
+                        <div
+                          class="digi-header-top-left-select-city-bottom-center-bottom-center"
+                        >
+                          <p
+                            class="digi-header-top-left-select-city-bottom-center-bottom-center-p"
+                          >
+                            شهرهای پرتکرار
+                          </p>
+                          <div
+                            class="digi-header-top-left-select-city-bottom-center-bottom-center-items"
+                          >
+                            <!-- Swiper -->
+                            <div class="swiper slide-in">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="swiper-slide-city">
+                                    <p>تهران</p>
+                                    <img
+                                      src="images/arrow-left/arrow-left.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="swiper-slide-city">
+                                    <p>کرج</p>
+                                    <img
+                                      src="images/arrow-left/arrow-left.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="swiper-slide-city">
+                                    <p>اصفهان</p>
+                                    <img
+                                      src="images/arrow-left/arrow-left.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="swiper-slide-city">
+                                    <p>مشهد</p>
+                                    <img
+                                      src="images/arrow-left/arrow-left.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="swiper-slide-city">
+                                    <p>ساری</p>
+                                    <img
+                                      src="images/arrow-left/arrow-left.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="swiper-slide-city">
+                                    <p>رشت</p>
+                                    <img
+                                      src="images/arrow-left/arrow-left.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="swiper-slide-city">
+                                    <p>اهواز</p>
+                                    <img
+                                      src="images/arrow-left/arrow-left.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="swiper-slide-city">
+                                    <p>تبریز</p>
+                                    <img
+                                      src="images/arrow-left/arrow-left.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="swiper-slide-city">
+                                    <p>شیراز</p>
+                                    <img
+                                      src="images/arrow-left/arrow-left.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="swiper-slide-city">
+                                    <p>ارومیه</p>
+                                    <img
+                                      src="images/arrow-left/arrow-left.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-button-next"></div>
+                              <div class="swiper-button-prev"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="digi-header-top-left-select-city-bottom-center-bottom-bottom"
+                        >
+                          <div
+                            class="digi-header-top-left-select-city-bottom-center-bottom-bottom-items"
+                          >
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >آذرشهر</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >تیمورلو</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >گوگان</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >ممقان</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >ایلخچی</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >اسکو</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >شهر جدید سهند</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >اهر</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >هوراند</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >تیکمه داش</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >بستان آباد</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >بناب</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >خسروشاه</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >باسمنج</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >تبریز</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >سردرود</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >سیه رود</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >کلیبر</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان شرقی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >قوشچی</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان غربی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >سیلوانه</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان غربی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >سرو</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان غربی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >ارومیه</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در آذربایجان غربی</span
+                                >
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >اردبیل</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در اردبیل
+                                </span>
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >هیر</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در اردبیل
+                                </span>
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >اصلاندوز</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در اردبیل
+                                </span>
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                  >آران و بیدگل</span
+                                >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در اصفهان
+                                </span>
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                >
+                                  اصفهان
+                                </span>
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در اصفهان
+                                </span>
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                >
+                                  دولت آباد
+                                </span>
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در اصفهان
+                                </span>
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                >
+                                  اشتهارد
+                                </span>
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در البرز
+                                </span>
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                >
+                                  چهارباغ
+                                </span>
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در البرز
+                                </span>
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item"
+                            >
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right"
+                              >
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p"
+                                >
+                                  تهران
+                                </span>
+                                <span
+                                  class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-right-p-2"
+                                  >در تهران
+                                </span>
+                              </div>
+                              <div
+                                class="digi-header-top-left-select-city-bottom-center-bottom-bottom-item-left"
+                              >
+                                <img
+                                  src="images/arrow-left/arrow-left.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -5143,7 +6018,6 @@
       </footer>
       <!-- #endregion footer -->
     </div>
-    <script src="./js/choose--city.js" ></script>
     <script src="./src/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySlider", {
@@ -5300,7 +6174,14 @@
           prevEl: ".swiper-button-prev",
         },
       });
-     
+      var swiper = new Swiper(".slide-in", {
+        slidesPerView: 5,
+        spaceBetween: 2,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
   </body>
 </html>
