@@ -36,7 +36,7 @@ label[for="modal"] {
     display: flex;
     flex-flow: column wrap;
     .digi-header-top-left-select-city-top {
-      width: 410px;
+      width: 380px;
       height: 58px;
       padding: 0 20px;
       display: flex;
@@ -97,7 +97,6 @@ label[for="modal"] {
         height: 100%;
         display: flex;
         flex-flow: row wrap;
-        padding: 0 16px 16px 16px;
         overflow-y: auto;
         .digi-header-top-left-select-city-bottom-center-top {
           width: 100%;

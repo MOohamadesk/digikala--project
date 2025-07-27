@@ -2,6 +2,10 @@
   width: 100%;
   height: 100px;
   padding: 10px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .header--sm-top {
   width: 100%;
