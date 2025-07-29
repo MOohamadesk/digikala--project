@@ -232,22 +232,6 @@ header {
       justify-content: center;
       column-gap: 5px;
       margin-left: 20px;
-
-      .header--city-loc-icon {
-        display: flex;
-        align-items: center;
-        img {
-          width: 20px;
-          height: 20px;
-        }
-      }
-      .header--city-loc-text {
-        font-family: var(--font--IRyekan);
-        font-size: 12px;
-        line-height: 13px;
-        color: #f89f17;
-        font-weight: bold;
-      }
     }
   }
   .header--city-box {
