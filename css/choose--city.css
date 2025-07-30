@@ -1,13 +1,13 @@
 .header--city-box {
   width: 200px;
   .header--city-loc-icon {
-        display: flex;
-        align-items: center;
-        img {
-          width: 20px;
-          height: 20px;
-        }
-      }
+    display: flex;
+    align-items: center;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 label[for="modal"] {
   display: inline-block;

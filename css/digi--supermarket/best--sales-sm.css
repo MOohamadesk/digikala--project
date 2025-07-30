@@ -9,12 +9,12 @@
   background-color: #ffffff;
   width: 85%;
   height: 100%;
-  margin: 10px auto;
+  margin: 20px auto;
   border: 1px solid lightgray;
   border-radius: 18px;
 }
 
-.best--sales-header {
+.best--sales-header-sm {
   width: 100%;
   height: 45px;
   display: flex;
@@ -43,16 +43,16 @@
   height: 25px;
 }
 
-.best--sales-header-more {
+.best--sales-header-more-sm {
   height: 100%;
   display: flex;
   align-items: center;
   position: relative;
-  left: -500px;
+  left: -450px;
 }
 
-.best--sales-header-more a {
-  text-align: end;
+.best--sales-header-more-sm a {
+  text-align: center;
   font-family: var(--font--IRyekan);
   font-size: 14px;
   font-weight: 600;

@@ -76,6 +76,7 @@
           align-items: center;
           column-gap: 10px;
           padding-top: 20px;
+          cursor: pointer;
           .best--sales-rows-img {
             width: 86px;
             img {

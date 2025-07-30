@@ -352,7 +352,7 @@ label[for="digi-super-on"] {
   z-index: 99999999;
   transition: 500ms;
   .digi-super-suport-data {
-    width: 27%;
+    width: 30%;
     height: 46%;
     background-color: #ffffff;
     border-radius: 14px;
@@ -418,7 +418,7 @@ label[for="digi-super-on"] {
       height: 85%;
       margin-top: 12px;
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: row nowrap;
       justify-content: center;
       column-gap: 4px;
       padding: 10px 0;
@@ -428,7 +428,7 @@ label[for="digi-super-on"] {
         width: 48%;
         height: 100%;
         border-radius: 14px;
-        padding: 12px;
+
         cursor: pointer;
         background-color: #dbf3e6;
         display: flex;
@@ -533,7 +533,7 @@ label[for="digi-super-on"] {
         width: 48%;
         height: 100%;
         border-radius: 14px;
-        padding: 12px 0;
+
         cursor: pointer;
         background-color: #feebde;
         display: flex;
