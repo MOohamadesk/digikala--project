@@ -93,7 +93,7 @@
           </div>
           <!-- #endregion header--center -->
           <!-- #region header--bottom -->
-          <div class="header--bottom">
+          <div class="header--bottom mynavigation" id="myNav">
             <div class="header--nav">
               <ul class="nav--ulist">
                 <li class="header--nav-item">
@@ -152,10 +152,7 @@
                 <div class="header--city-loc-icon">
                   <img src="./images/header/city--loc.svg" alt="" />
                 </div>
-                <label for="modal">
-                  <img src="images/header-img/location.svg" alt="" /> لطفا شهر
-                  خود را انتخاب کنید</label
-                >
+                <label for="modal"> لطفا شهر خود را انتخاب کنید</label>
                 <input type="radio" name="modal" id="modal" />
                 <input type="radio" name="modal" id="close" />
                 <div class="digi-header-top-left-select-city-bgc">
@@ -3935,9 +3932,7 @@
           <div class="digi-logo">
             <img src="./images/footer/last--part-icons/digi--jet.svg" alt="" />
           </div>
-          <div class="digi-logo">
-            <img src="./images/footer/last--part-icons/digi--mehr" alt="" />
-          </div>
+          <div class="digi-logo"></div>
           <div class="digi-logo">
             <img src="./images/footer/last--part-icons/digi--next.svg" alt="" />
           </div>
@@ -4138,81 +4133,7 @@
 
     <!--#endregion wrapper-->
     <script src="./src/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/choose--city.js"></script>
+    <script src="./js/main.js"></script>
     <!-- initilize swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 12.5,
-        spaceBetween: 5,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-      var swiper = new Swiper(".mySlider", {
-        spaceBetween: 1,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-      var swiper = new Swiper(".myAmazing", {
-        slidesPerView: 8.2,
-        spaceBetween: 2,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-      var swiper = new Swiper(".myCategory", {
-        slidesPerView: 7.5,
-        spaceBetween: 10,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-      var swiper = new Swiper(".myFavorites", {
-        slidesPerView: 9.2,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-      var swiper = new Swiper(".mySales", {
-        slidesPerView: 4,
-        spaceBetween: 1,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-      var swiper = new Swiper(".slide-in", {
-        slidesPerView: 5,
-        spaceBetween: 2,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
   </body>
 </html>

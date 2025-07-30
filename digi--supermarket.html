@@ -75,7 +75,7 @@
         </div>
         <!-- #endregion header--top -->
         <!-- #region header--bottom -->
-        <div class="header--sm-bottom">
+        <div class="header--sm-bottom" id="myNav">
           <div class="header--sm-bottom-nav">
             <ul class="nav--sm-ulist">
               <li class="header--sm-nav-item">
@@ -102,9 +102,8 @@
               <div class="header--sm-city-loc-icon">
                 <img src="./images/digi--supermarket/city--loc.svg" alt="" />
               </div>
-              <label for="modal">
-                <img src="images/header-img/location.svg" alt="" /> لطفا شهر خود
-                را انتخاب کنید</label
+              <label for="modal" class="buttonForSM">
+                لطفا شهر خود را انتخاب کنید</label
               >
               <input type="radio" name="modal" id="modal" />
               <input type="radio" name="modal" id="close" />
@@ -6150,6 +6149,7 @@
       <!-- #endregion footer -->
     </div>
     <script src="./src/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
     <script>
       var swiper = new Swiper(".mySlider", {
         spaceBetween: 1,

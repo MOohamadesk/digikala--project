@@ -28,6 +28,8 @@ footer {
         justify-content: center;
         border: 1px solid lightgray;
         border-radius: 8px;
+
+        transition: all 300ms ease;
         a {
           text-decoration: none;
           align-items: center;
